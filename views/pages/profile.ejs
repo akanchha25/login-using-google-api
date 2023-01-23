@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Profile</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Welcome to Cloud Connect</h1>
+    <div class="container">
+      <div class="profile-box">
+        <img class="menu-icon" src="images/menu.png" alt="Card image cap" />
+        <img
+          class="setting-icon"
+          src="images/setting.png"
+          alt="Card image cap"
+        />
+        <img class="profile-pic" src="<%= pic%>" alt="Card image cap" />
+        <p class="card-text">
+          <centre>
+            <p><strong>Name</strong>: <%= name %></p>
+            <p><strong>Email</strong>: <%= email %></p>
+          </centre>
+        </p>
+        <button><a href="/logout" class="btn btn-default">Logout</a></button>
+        <div class="profile-bottom">
+          <img src="images/arrow.png" alt="" />
+          <button><a href="/uploadto">Upload files</a></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
